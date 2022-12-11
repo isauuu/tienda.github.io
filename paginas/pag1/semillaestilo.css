@@ -1,0 +1,196 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+
+}
+.enlace{
+    position: absolute;
+    padding: 20px 50px;
+}
+nav{
+    background-color: rgb(1, 87, 87);
+    height: 80px;
+    width: 100;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: white;
+    font-size: 10px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+
+}
+li a.active, li a:hover{
+    background-color: rgb(18, 18, 235);
+    transition: .5s;
+
+}
+
+
+#check{
+    display: none;
+    color: rgb(9, 200, 248);
+    font-size: 32px;
+    position: absolute;
+    right: 10px;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: rgb(12, 235, 12);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+.check{
+    display: none;
+}
+
+   
+h1{
+
+
+ font-size: 80px;
+    text-align: center;
+    font-family: arial;
+}
+section p{
+    font-size:30px;
+    text-align: center;
+    color: red;
+    background-color: yellow;
+}
+table{
+    margin-top: 50px;
+    caption-side: bottom;
+    margin-left: auto;
+    margin-right: auto;
+}
+td,th{
+    border: 2px solid black;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.tabla{
+    border: 12px;
+    background-color: aqua;
+    align-items: center;
+}
+
+@media (max-width: 950px){
+    .enlace{
+         padding-left: 20px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+@media(max-width:850px){
+    .checkbtn{
+        display: block;
+
+    }
+    ul{
+        position: fixed;
+        width: auto;
+        height: 100vh;
+        background: gray;
+        top: 80px;
+        left: -150px;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+
+    }
+    li a:hover, li a.active{
+        background: none;
+        color: red;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+div.contenedor {
+    width: 800px;
+    margin: 0 auto;
+  }
+  h2 {
+    text-align: center;
+    color: rgb(20, 3, 3);
+text-transform: uppercase
+  }
+  
+div.productos {
+    margin-top: 30px;
+  }
+  
+  ul.lista-productos {
+    list-style: none;
+    margin:0;
+    padding:0;
+  }
+  ul.lista-productos li{
+    float: left;
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+  
+  }
+  
+  ul.lista-productos li:nth-child(2n+1) {
+     clear: both;
+  }
+  ul.lista-productos li:hover {
+    background-color:f
+  }
+
+  ul.lista-productos li img {
+    border: 10px solid rgba(160, 6, 243, 0.45);
+  
+  }
+  ul.lista-productos li img:hover {
+      border: 10px solid #8001c3;
+  }
+  ul.lista-productos li p {
+    font-size: 28px;
+    font-weight: bold;
+    color: #f80505;
+    margin:10px 0 0 0;
+  }
+  ul.lista-productos li p span {
+    color: rgb(90, 1, 25526, 255);
+    font-size:40px;
+  }
+  ul.lista-productos li a {
+    background-color: #ffe88d;
+    padding: 10px 40px;
+    display: inline-block;
+    margin-top: 10px;
+    color: #8001c3;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 18px;
+  }
